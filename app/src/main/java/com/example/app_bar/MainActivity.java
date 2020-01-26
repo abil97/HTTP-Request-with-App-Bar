@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private TextView myText;                                    // Text view that appears in the middle of the screen
     private RestTemplate restTemplate;
     private GetAWebResourceTask dataFetcher;
-    private Button btnReset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,15 +45,6 @@ public class MainActivity extends AppCompatActivity {
         // Set up a new object for asynchronous task
         dataFetcher = new GetAWebResourceTask(restTemplate, myText);
 
-
-        btnReset = findViewById(R.id.button);
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                myText.setText(getResources().getString(R.string.about));
-                myText.setTypeface(null, Typeface.BOLD);
-            }
-        });
 
     }
 
