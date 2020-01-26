@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App_Bar</string>
+    <string name="toolbar_sign_out">toolbar_sign_out</string>
+    <string name="about">Hello!\n In order to make a HTTP request, \nclick on the top right corner, \nand select \"Make a Request\".</string>
+</resources>
